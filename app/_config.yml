@@ -26,4 +26,9 @@ github_username:  jekyll
 
 # Build settings
 markdown: kramdown
-theme: minima
+# theme: minima
+permalink: pretty
+
+sass:
+  sass_dir: assets/css
+  style: :nested

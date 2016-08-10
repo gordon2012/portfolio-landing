@@ -1,23 +1,24 @@
 ---
-layout: default
 ---
+<!DOCTYPE html>
 
-<div class="home">
+<html>
 
-  <h1 class="page-heading">Posts</h1>
+  <head>
+    <meta charset="UTF-8">
+    <title>Gordon Doskas</title>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+    <link rel="stylesheet" href="/assets/css/all.css">
+  </head>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+  <body>
+    {% include header.html %}
+    
+    {% include about.html %}
+    {% include work.html %}
+    {% include contact.html %}
+    
+    {% include footer.html %}
+  </body>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+</html>
