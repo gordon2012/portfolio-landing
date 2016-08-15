@@ -2,4 +2,20 @@
 # all.sass
 ---
 
+
+
+$textColor: {{ site.data.layout.textColor }}
+$contrastColor: {{ site.data.layout.contrastColor }}
+$accentColor: {{ site.data.layout.accentColor }}
+
+h1
+    color: $contrastColor
+
+h1, h2
+    margin: 0
+
+section
+    min-height: 500px
+
+
 @import 'sections/_index'

@@ -1,2 +1,32 @@
+//@import "tools/bootstrap.min.css"
+
 header
-    background-color: yellow
+    background-image: url(../img/tree-fog.jpg)
+
+    background-repeat: no-repeat
+    background-size: cover
+
+    .brand
+        color: $contrastColor
+
+    nav
+        border: 1px solid blue
+        
+        a
+            color: $accentColor
+        a:hover
+            color: $contrastColor
+
+
+    h1
+        font-size: 72px
+        padding-top: 200px
+        text-align: center
+        padding-bottom: 300px
+
+        .shadow
+            -webkit-text-stroke: 1px black
+        .left
+            text-shadow: -6px 1px 0 #000, -6px -1px 0 #000
+        .right
+            text-shadow: 6px 1px 0 #000, 6px -1px 0 #000
