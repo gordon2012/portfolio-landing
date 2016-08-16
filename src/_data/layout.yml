@@ -2,4 +2,8 @@
 
 textColor: "#000"
 contrastColor: "#fff"
-accentColor: "#fcc"
+
+# accentColor: "#339"
+
+accentLight: "#ccf"
+accentDark: "#339"

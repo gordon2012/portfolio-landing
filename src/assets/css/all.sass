@@ -2,11 +2,10 @@
 # all.sass
 ---
 
-
-
 $textColor: {{ site.data.layout.textColor }}
 $contrastColor: {{ site.data.layout.contrastColor }}
-$accentColor: {{ site.data.layout.accentColor }}
+$accentLight: {{ site.data.layout.accentLight }}
+$accentDark: {{ site.data.layout.accentDark }}
 
 h1
     color: $contrastColor
@@ -14,8 +13,23 @@ h1
 h1, h2
     margin: 0
 
+h2
+    //
+    //border: 1px solid blue
+
+    padding: 30px 0
+
+    text-align: center
+    color: $accentDark
+
+    font-variant: small-caps
+
 section
-    min-height: 500px
+    min-height: 1000px
+
+section:nth-child(odd)
+    background: #ddd
+
 
 
 @import 'sections/_index'
