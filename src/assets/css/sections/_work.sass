@@ -7,23 +7,12 @@ section#work
         flex-flow: row wrap
 
         div
-            //
-            background: green
-            &:nth-child(2)
-                background: orange
-            &:nth-child(3)
-                background: yellow
-            &:nth-child(4)
-                background: cyan
-            &:nth-child(5)
-                background: pink
-            &:nth-child(6)
-                background: lime
-            //
-
             height: 200px
 
             flex: 1 100%
+
+            background-repeat: no-repeat
+            background-size: cover
 
     @media all and (min-width: 480px)
         .work-container
@@ -34,3 +23,4 @@ section#work
         .work-container
             div
                 flex-basis: 33.33%
+                
