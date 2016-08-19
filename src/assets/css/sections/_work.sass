@@ -1,3 +1,6 @@
+$transition: 0.5s
+$perspective: 700px
+
 section#work
     .work-container
         max-width: 1000px
@@ -6,21 +9,46 @@ section#work
         display: flex
         flex-flow: row wrap
 
-        div
+        .work-item
             height: 200px
 
             flex: 1 100%
 
-            background-repeat: no-repeat
-            background-size: cover
+            display: block
+            position: relative
+
+            .work-item-front, .work-item-back
+                display: block
+                position: absolute
+                height: 100%
+                width: 100%
+                backface-visibility: hidden
+                transition: transform $transition linear 0s
+            
+            .work-item-front
+                background-repeat: no-repeat
+                background-size: cover
+                transform: perspective($perspective) rotateY(0deg)
+
+            .work-item-back
+                color: $contrastColor
+                background: $accentDark
+                transform: perspective($perspective) rotateY(180deg)
+
+            &:hover
+                .work-item-front
+                    transform: perspective($perspective) rotateY(-180deg)
+
+                .work-item-back
+                    transform: perspective($perspective) rotateY(0deg)
 
     @media all and (min-width: 480px)
         .work-container
-            div
+            .work-item
                 flex-basis: 50%
         
     @media all and (min-width: 760px)
         .work-container
-            div
+            .work-item
                 flex-basis: 33.33%
                 

@@ -5,7 +5,9 @@
     <div class="work-container">
         
         {% for i in (1..6) %}
-            <div style="background-image: url(assets/img/work/{{ i }}.jpg)">
+            <div class="work-item">
+                <div class="work-item-front" style="background-image: url(assets/img/work/{{ i }}.jpg)"></div>
+                <div class="work-item-back">Some text</div>
             </div>
         {% endfor %}
         
