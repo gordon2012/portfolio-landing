@@ -4,10 +4,10 @@
 
     <div class="work-container">
         
-        {% for i in (1..6) %}
+        {% for project in site.data.settings.projects %}
             <div class="work-item">
-                <div class="work-item-front" style="background-image: url(assets/img/work/{{ i }}.jpg)"></div>
-                <div class="work-item-back">Some text</div>
+                <div class="work-item-front" style="background-image: url(assets/img/work/{{ forloop.index }}.jpg)"></div>
+                <div class="work-item-back">{{ project.name }}</div>
             </div>
         {% endfor %}
         
