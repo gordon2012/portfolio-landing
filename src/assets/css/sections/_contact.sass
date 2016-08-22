@@ -1,2 +1,35 @@
+.fa-chainedin:before
+    content: "\f0e1"
+
+.fa-talkbird:before
+    content: "\f099"
+
 section#contact
-    //background-color: pink
+
+    .contact-container
+        display: flex
+        flex-flow: row wrap
+        justify-content: space-around
+
+        .contact-item
+            flex: 1 50%
+            
+            span
+                display: block
+                margin: auto
+
+                .outer
+                    color: $accentDark
+
+                .inner
+                    color: $contrastColor
+
+    @media all and (min-width: 600px)
+        .contact-container
+            .contact-item
+                flex-basis: 33.33%
+
+    @media all and (min-width: 900px)
+        .contact-container
+            .contact-item
+                flex-basis: 0
