@@ -32,7 +32,7 @@ permalink: pretty
 destination: public
 source: src
 
-exclude: ['Gemfile', 'Gemfile.lock', 'node_modules']
+exclude: ['Gemfile', 'Gemfile.lock', 'node_modules', 'vendor']
 include: ['node_modules/bootstrap/dist/css/bootstrap.css']
 
 
