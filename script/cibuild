@@ -5,7 +5,7 @@ date
 bundle exec jekyll build
 bundle exec htmlproofer ./_site
 
-cd _site
+cd public
 git init
 
 git config user.name "Travis CI"

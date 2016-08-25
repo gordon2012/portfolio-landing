@@ -75,6 +75,7 @@ DEPENDENCIES
   html-proofer
   jekyll (= 3.2.1)
   minima
+  nokogiri
 
 RUBY VERSION
    ruby 2.2.5p319
