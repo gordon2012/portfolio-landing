@@ -1,5 +1,6 @@
 $transition: 0.5s
 $perspective: 700px
+$timing: cubic-bezier(.1,.2,.9,.8)
 
 section#work
     .work-container
@@ -23,7 +24,7 @@ section#work
                 height: 100%
                 width: 100%
                 backface-visibility: hidden
-                transition: transform $transition linear 0s
+                transition: transform $transition $timing 0s
             
             .work-item-front
                 background-repeat: no-repeat
