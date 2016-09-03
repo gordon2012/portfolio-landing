@@ -1,36 +1,53 @@
 footer
     background-image: url(../img/blue-sky-trees.jpg)
-
     background-repeat: no-repeat
     background-size: cover
-
-    height: 300px
-
-    color: $contrastColor
-
-
-    display: flex
     
+    .top
+        display: flex
+        align-items: center
     
-    .brand
-        border: 1px solid red
+        .brand
+            //
+            // border: 1px solid red
 
-        flex: 1 25%
+            padding: 16px
 
-    .nav
-        border: 1px solid blue
+            flex: 1 1 50%
 
-        flex: 1 75%
+            span
+                color: $accentDark
+                background: white
+                padding: 8px
+                
+                font-size: 2em
+
+                border-radius: 50%
+
+        .nav
+            //
+            // border: 1px solid cyan
+
+            flex: 1 0 50%
         
+            nav
+                display: flex
+                justify-content: space-around
+        
+    .bottom
+        //
+        // border: 1px solid yellow
 
-    nav
-        // flex: 1 33%
+        display: flex
+        justify-content: center
 
-        a
+        span
+            //
+            // border: 1px solid lime
+
+            margin-bottom: 24px
+
             color: $contrastColor
-
-    span
-        // flex: 1 33%
-
+        
 
     
