@@ -1,9 +1,9 @@
 # Work section
 
 projects:
--  {name: Project 1}
--  {name: Project 2}
--  {name: Max title length that still fits squished}
--  {name: Project 4}
--  {name: Project 5}
--  {name: Project 6}
+-  {name: Random Quote Machine}
+-  {name: Wikipedia Search}
+-  {name: Twitch.tv Status}
+-  {name: Camper Leaderboard}
+-  {name: Pomodoro Timer}
+-  {name: Calculator}
