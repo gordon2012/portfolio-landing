@@ -7,3 +7,17 @@ projects:
 -  {name: Camper Leaderboard}
 -  {name: Pomodoro Timer}
 -  {name: Calculator}
+
+skills:
+-  {name: HTML}
+-  {name: CSS}
+-  {name: JavaScript}
+-  {name: Bootstrap}
+-  {name: Jquery}
+-  {name: Jekyll}
+-  {name: Sass}
+-  {name: React}
+-  {name: Webpack}
+-  {name: Git}
+-  {name: Wordpress}
+-  {name: D3}

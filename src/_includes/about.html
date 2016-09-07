@@ -11,12 +11,11 @@
     </div>
 
     <div class="skills">
-        <div>HTML</div>
-        <div>CSS</div>
-        <div>JavaScript</div>
-        <div>Bootstrap</div>
-        <div>Jquery</div>
-        <div>Jekyll</div>
+        {% for skill in site.data.settings.skills %}
+            <div class="skill-item">
+                {{ skill.name }}
+            </div>
+        {% endfor %}
     </div>
 
 </section>
