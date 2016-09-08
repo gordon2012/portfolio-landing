@@ -11,11 +11,14 @@
     </div>
 
     <div class="skills">
-        {% for skill in site.data.settings.skills %}
-            <div class="skill-item">
-                {{ skill.name }}
-            </div>
-        {% endfor %}
+        <h3>My Skills</h3>
+        <div class="skills-list">
+            {% for skill in site.data.settings.skills %}
+                <div class="skill-item">
+                    <span>{{ skill.name }}</span>
+                </div>
+            {% endfor %}
+        </div>
     </div>
 
 </section>
