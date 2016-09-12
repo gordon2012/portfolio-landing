@@ -1,16 +1,29 @@
 <section id="work">
 
+
     <h2>My Work</h2>
 
-    <div class="work-container">
+
+
+    <div class="work-belt">
         
-        {% for project in site.data.settings.projects %}
-            <div class="work-item">
-                <div class="work-item-front" style="background-image: url(assets/img/work/{{ forloop.index }}.png)"></div>
-                <div class="work-item-back"><span>{{ project.name }}</span></div>
-            </div>
-        {% endfor %}
-        
+
+        <div class="work-container">        
+            {% for project in site.data.settings.projects %}
+                <div class="work-item">
+                    <div class="work-item-front" style="background-image: url(assets/img/work/{{ forloop.index }}.png)"></div>
+                    <div class="work-item-back"><span>{{ project.name }}</span></div>
+                </div>
+            {% endfor %}
+        </div>
+
+
+        <div class="work-popup">
+            <h3>Project Name</h2>        
+        </div>
+
+
+
     </div>
 
 </section>
