@@ -13,4 +13,24 @@ $(function(){
             }, DURATION);
         }
     });
+
+
+    // Work Popup
+    //
+    $('.work-item').click(function(){
+        var $this = $(this);
+        console.log($this.data('work'));
+
+        $('.work-popup-return').show();
+        $('.work-popup-' + $this.data('work')).show();
+
+        $('.work-thumb').hide();
+    });
+
+    $('.work-popup-return').click(function(){
+        $('.work-thumb').show();
+
+        $('.work-popup-return').hide();
+        $('.work-popup').hide();
+    });
 });

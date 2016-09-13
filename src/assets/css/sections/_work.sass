@@ -4,92 +4,74 @@ $timing: cubic-bezier(.1,.2,.9,.8)
 
 section#work
 
-    overflow-x: hidden
+    .work-thumb
+        max-width: 1000px
+        margin: auto
 
-    .work-belt
+        display: flex
+        flex-flow: row wrap
 
-        // background: orange
-        // border: 1px solid orange
+        .work-item
+            height: 200px
 
-        width: 200%
-        // position: relative
-        left: 0%
+            flex: 1 100%
 
-        .work-popup
-            width: 50%
-            float: left
+            display: block
+            position: relative
 
-            z-index: 1
-            // border: 1px solid pink
-            background: pink
-
-            min-height: 700px
-            // height: 100%
-            width: 100%
-
-            position: absolute
-
-
-        .work-container
-            width: 50%
-            float: left
-
-
-            max-width: 1000px
-            margin: auto
-
-            display: flex
-            flex-flow: row wrap
-
-            .work-item
-                height: 200px
-
-                flex: 1 100%
-
+            .work-item-front, .work-item-back
                 display: block
-                position: relative
+                position: absolute
+                height: 100%
+                width: 100%
+                backface-visibility: hidden
+                transition: transform $transition $timing 0s
 
-                .work-item-front, .work-item-back
-                    display: block
+            .work-item-front
+                background-repeat: no-repeat
+                background-size: cover
+                transform: perspective($perspective) rotateY(0deg)
+
+            .work-item-back
+                color: $contrastColor
+                background: $accentDark
+                transform: perspective($perspective) rotateY(180deg)
+
+                span
                     position: absolute
-                    height: 100%
-                    width: 100%
-                    backface-visibility: hidden
-                    transition: transform $transition $timing 0s
-                
+                    font-size: 2em
+
+                    left: 32px
+                    right: 32px
+                    top: 32px
+
+            &:hover
                 .work-item-front
-                    background-repeat: no-repeat
-                    background-size: cover
-                    transform: perspective($perspective) rotateY(0deg)
+                    transform: perspective($perspective) rotateY(-180deg)
 
                 .work-item-back
-                    color: $contrastColor
-                    background: $accentDark
-                    transform: perspective($perspective) rotateY(180deg)
-
-                    span
-                        position: absolute
-                        font-size: 2em
-
-                        left: 32px
-                        right: 32px
-                        top: 32px
-
-                &:hover
-                    .work-item-front
-                        transform: perspective($perspective) rotateY(-180deg)
-
-                    .work-item-back
-                        transform: perspective($perspective) rotateY(0deg)
+                    transform: perspective($perspective) rotateY(0deg)
 
     @media all and (min-width: 480px)
-        .work-belt
-            .work-container
-                .work-item
-                    flex-basis: 50%
-        
+        .work-thumb
+            .work-item
+                flex-basis: 50%
+
     @media all and (min-width: 760px)
-        .work-belt
-            .work-container
-                .work-item
-                    flex-basis: 33.33%
+        .work-thumb
+            .work-item
+                flex-basis: 33.33%
+
+
+    .work-popup-container
+        z-index: 1
+        background: pink
+
+        width: 100%
+
+        .work-popup
+            display: none
+
+        .work-popup-return
+            display: none
+
