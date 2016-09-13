@@ -1,12 +1,12 @@
 # Work section
 
 projects:
--  {name: Random Quote Machine}
--  {name: Wikipedia Search}
--  {name: Twitch.tv Status}
--  {name: Camper Leaderboard}
--  {name: Pomodoro Timer}
--  {name: Calculator}
+-  {name: Random Quote Machine, description: 'The Random Quote Machine allows the user to request a random quote and is given the option to share it via social media.'}
+-  {name: Wikipedia Search, description: 'Wikipedia Search'}
+-  {name: Twitch.tv Status, description: 'Twitch.tv Status'}
+-  {name: Camper Leaderboard, description: 'Camper Leaderboard'}
+-  {name: Pomodoro Timer, description: 'Pomodoro Timer'}
+-  {name: Calculator, description: 'Calculator'}
 
 skills:
 -  {name: HTML}
