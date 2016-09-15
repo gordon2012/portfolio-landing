@@ -10,12 +10,19 @@
             {% endfor %}
         </div>
 
+        <label class="work-popup-return" 
+            <span class="fa-stack fa-4x">
+                <i class="inner fa fa-circle fa-stack-2x"></i>
+                <i class="outer fa fa-github fa-stack-2x"></i>
+            </span>
+        </label>
+
         <div class="work-popup-container">
             <button class="work-popup-return">Back</button>
             {% for project in site.data.settings.projects %}
                 <div class="work-popup work-popup-{{ forloop.index }}">
 
-                    {% include work/project.html name=project.name description=project.description %}
+                    {% include work/project.html name=project.name description=project.description index=forloop.index %}
 
                 </div>
             {% endfor %}
