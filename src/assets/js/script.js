@@ -1,5 +1,4 @@
 $(function(){
-
     // Smooth scrolling
     var DURATION = 300;
 
@@ -21,7 +20,6 @@ $(function(){
         var $this = $(this);
         console.log($this.data('work'));
 
-        $('.work-popup-return').show();
         $('.work-popup-' + $this.data('work')).show();
 
         $('.work-thumb').hide();
@@ -30,7 +28,6 @@ $(function(){
     $('.work-popup-return').click(function(){
         $('.work-thumb').show();
 
-        $('.work-popup-return').hide();
         $('.work-popup').hide();
     });
 });

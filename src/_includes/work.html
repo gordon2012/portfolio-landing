@@ -10,22 +10,25 @@
             {% endfor %}
         </div>
 
-        <label class="work-popup-return" 
-            <span class="fa-stack fa-4x">
-                <i class="inner fa fa-circle fa-stack-2x"></i>
-                <i class="outer fa fa-github fa-stack-2x"></i>
-            </span>
-        </label>
-
         <div class="work-popup-container">
-            <button class="work-popup-return">Back</button>
             {% for project in site.data.settings.projects %}
-                <div class="work-popup work-popup-{{ forloop.index }}">
+                {% capture i %}{{ forloop.index }}{% endcapture %}
+                <div class="work-popup work-popup-{{ i }}">
+                    <div class="work-popup-return">Back</div>
+                    <h3>{{ project.name }}</h3>
+                    <img src="assets/img/work/{{ i }}.png" alt="">
+                    <p>{{ project.description }}</p>
 
-                    {% include work/project.html name=project.name description=project.description index=forloop.index %}
+                    {% capture path_test %}assets/img/work/{{ i }}/{% endcapture %}
 
+                    {% for image in site.static_files %}
+                        {% assign path = image.path | remove_first: '/' %}
+
+                        {% if path contains path_test %}
+                            <img src="{{ path }}">
+                        {% endif %}
+                    {% endfor %}
                 </div>
             {% endfor %}
         </div>
-
 </section>

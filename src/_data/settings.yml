@@ -1,12 +1,12 @@
 # Work section
 
 projects:
--  {name: Random Quote Machine, description: 'The Random Quote Machine allows the user to request a random quote and is given the option to share it via social media.'}
--  {name: Wikipedia Search, description: 'Wikipedia Search'}
--  {name: Twitch.tv Status, description: 'Twitch.tv Status'}
--  {name: Camper Leaderboard, description: 'Camper Leaderboard'}
--  {name: Pomodoro Timer, description: 'Pomodoro Timer'}
--  {name: Calculator, description: 'Calculator'}
+-  {name: Random Quote Machine, description: 'A random quote generator connected to multiple providers, allowing quotes to be shared via social media.'}
+-  {name: Wikipedia Search, description: 'An implementation of Wikipedia search that uses its search API'}
+-  {name: Twitch.tv Status, description: 'An app that monitors the status of Twitch.tv streamers'}
+-  {name: Camper Leaderboard, description: 'Find out who has the most brownie points on FreeCodeCamp over the past 30 days or all time'}
+-  {name: Pomodoro Timer, description: 'Meaning tomato in Italian, the Pomodoro method involves working for a specific amount of time with scheduled breaks'}
+-  {name: Calculator, description: 'A JavaScript powered calculator'}
 
 skills:
 -  {name: HTML}
