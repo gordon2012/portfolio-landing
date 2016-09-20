@@ -14,7 +14,17 @@
             {% for project in site.data.settings.projects %}
                 {% capture i %}{{ forloop.index }}{% endcapture %}
                 <div class="work-popup work-popup-{{ i }}">
-                    <div class="work-popup-return">Back</div>
+
+                    <div class="work-popup-return">
+                        <div class="work-popup-return-inner">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                                <path d="M1 16l15 15v-9h16v-12h-16v-9z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+
+
                     <h3>{{ project.name }}</h3>
                     <img src="assets/img/work/{{ i }}.png" alt="">
                     <p>{{ project.description }}</p>
