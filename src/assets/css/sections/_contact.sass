@@ -6,6 +6,8 @@
 
 section#contact
 
+
+
     .contact-container
         display: flex
         flex-flow: row wrap
@@ -72,3 +74,18 @@ section#contact
             @media all and (min-width: 500px)
                 .name, .email
                     flex-basis: 0
+    .svg-outer
+        // width: 64px
+        // height: 64px
+
+    .test-container
+        display: flex
+        flex-flow: row wrap
+        justify-content: space-around
+
+        .test-item
+            .svg-outer
+                cursor: pointer
+                transition: transform 1s
+                &:hover
+                    transform: scale(1.3)
