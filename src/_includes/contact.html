@@ -78,18 +78,12 @@
 
     <div class="test-container">
 
-        <a class="test-item">
-            {% include svg.html outer-size=128 inner-size=72 %}
-        </a>
-
-        <a class="test-item">
-            {% include svg.html outer-size=128 inner-size=72 %}
-        </a>
-
-        <a class="test-item">
-            {% include svg.html outer-size=128 inner-size=72 %}
-        </a>
-
+        {% for social in site.data.settings.social %}
+            <a class="test-item" href="{{ social.url }}" target="_blank">
+                {% include svg.html outer-size=social.outer-size inner-size=social.inner-size bgcolor=social.bgcolor color=social.color path=social.path %}
+            </a>
+        {% endfor %}
 
     </div>
+
 </section>
