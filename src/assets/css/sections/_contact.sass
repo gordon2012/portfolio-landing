@@ -1,45 +1,42 @@
-.fa-chainedin:before
-    content: "\f0e1"
-
-.fa-talkbird:before
-    content: "\f099"
-
 section#contact
-
-
 
     .contact-container
         display: flex
         flex-flow: row wrap
         justify-content: space-around
+        overflow: hidden
+        padding: 32px
 
-        .contact-item
-            flex: 1 50%
-            
-            span
-                display: block
-                margin: auto
+        .contact-item-outer
+            flex: 0 0 100%
+            margin:  32px 0
 
-                .outer
-                    color: $accentDark
-
-                .inner
-                    color: $contrastColor
+            .contact-item-border
+                border-radius: 50%
+                margin: 0 auto
+                cursor: pointer
 
                 transition: transform 1s
                 &:hover
                     transform: scale(1.3)
 
+                .contact-item-inner
+                    margin: 0 auto
+                    position: relative
+                    top: 50%
+                    transform: translateY(-50%)
+
     @media all and (min-width: 600px)
         .contact-container
-            .contact-item
+            .contact-item-outer
                 flex-basis: 33.33%
 
-    @media all and (min-width: 900px)
+    @media all and (min-width: 1000px)
         .contact-container
-            .contact-item
+            .contact-item-outer
                 flex-basis: 0
     
+
     .outer-container
         border: 1px solid black
         max-width: 700px
@@ -74,18 +71,3 @@ section#contact
             @media all and (min-width: 500px)
                 .name, .email
                     flex-basis: 0
-    .svg-outer
-        // width: 64px
-        // height: 64px
-
-    .test-container
-        display: flex
-        flex-flow: row wrap
-        justify-content: space-around
-
-        .test-item
-            .svg-outer
-                cursor: pointer
-                transition: transform 1s
-                &:hover
-                    transform: scale(1.3)

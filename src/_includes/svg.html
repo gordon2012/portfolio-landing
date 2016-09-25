@@ -1,7 +1,10 @@
-<div class="svg-outer" style="width:{{ include.outer-size }}px; height: {{ include.outer-size }}px; background-color: {{ include.bgcolor }}">
-    <div class="svg-inner" style="width: {{ include.inner-size }}px; height: {{ include.inner-size }}px">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-            <path fill="{{ include.color }}" d="{{ include.path }}"></path>
-        </svg>
+<div class="contact-item-outer">
+    <div class="contact-item-border" style="width:{{ include.outer-size }}px; height: {{ include.outer-size }}px; background-color: {{ include.bgcolor }}">
+        <a href="{{ include.url }}"></a>
+        <div class="contact-item-inner" style="width: {{ include.inner-size }}px; height: {{ include.inner-size }}px">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                <path fill="{{ include.color }}" d="{{ include.path }}"></path>
+            </svg>
+        </div>
     </div>
 </div>
