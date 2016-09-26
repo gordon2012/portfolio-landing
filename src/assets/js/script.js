@@ -30,4 +30,11 @@ $(function(){
 
         $('.work-popup').hide();
     });
+
+
+    // Social Links
+    $('.contact-item-border').click(function(){
+        window.open($(this).find('a').attr('href'), '_blank');
+    });
+
 });
