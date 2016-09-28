@@ -40,7 +40,7 @@ $(function(){
 
     // FitText
     //
-    $('header h1').fitText(1, {minFontSize: '20px', maxFontSize: '72px'});
+    $('header h1').fitText(0.9, {minFontSize: '20px', maxFontSize: '72px'});
 
 });
 
