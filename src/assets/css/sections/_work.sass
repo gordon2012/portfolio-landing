@@ -67,16 +67,17 @@ section#work
 
     .work-popup-container
         z-index: 1
-        max-width: 460px
         margin: 0 auto
 
         .work-popup
             display: none
 
+            h3
+                padding-left: 32px
+
 
     .work-popup-return
-        position: absolute
-        left: -75px
+        margin-left: 16px
         cursor: pointer
 
         background-color: $accentDark
@@ -106,3 +107,10 @@ section#work
 
         img
             width: 100%
+
+    @media all and (min-width: 620px)
+        .work-popup-container
+            max-width: 620px
+
+        .work-popup-return
+            margin-left: 0
