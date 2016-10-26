@@ -1,10 +1,8 @@
 language: ruby
 rvm:
   - 2.1
-
 before_install:
   - export TZ=US/Pacific
-
-script: bash ./script/cibuild
-
-sudo: false
+install: gem install jekyll -v 3.2.1 && gem install s3_website
+script: jekyll build
+after_success: s3_website push
