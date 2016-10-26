@@ -4,4 +4,4 @@ rvm:
 before_install:
   - export TZ=US/Pacific
 script: bash ./script/cibuild
-after_success: s3_website push
+after_success: bundle exec s3_website push
