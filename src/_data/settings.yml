@@ -7,11 +7,12 @@ projects:
 
 -  {name: Calculator, description: 'A JavaScript powered calculator', site: 'gordon2012.github.io/calculator', github: 'github.com/gordon2012/calculator'}
 
-
-
 -  {name: Random Quote Machine, description: 'A random quote generator connected to multiple providers, allowing quotes to be shared via social media.'}
+
 -  {name: Wikipedia Search, description: 'An implementation of Wikipedia search that uses its search API'}
--  {name: Twitch.tv Status, description: 'An app that monitors the status of Twitch.tv streamers'}
+
+-  {name: Twitch.tv Status, description: 'An app that monitors the status of Twitch.tv streamers.<br><br>Technologies used: React, Sass, Webpack', site: 'gordon2012.github.io/twitch', github: 'github.com/gordon2012/twitch'}
+
 
 skills:
 -  {name: HTML}
@@ -26,6 +27,7 @@ skills:
 -  {name: Git}
 -  {name: Wordpress}
 -  {name: D3}
+
 
 social:
   - url: 'https://github.com/gordon2012'
