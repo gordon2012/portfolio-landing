@@ -7,7 +7,7 @@ projects:
 
 -  {name: Calculator, description: 'A JavaScript powered calculator', site: 'gordon2012.github.io/calculator', github: 'github.com/gordon2012/calculator'}
 
--  {name: Random Quote Machine, description: 'A random quote generator connected to multiple providers, allowing quotes to be shared via social media.'}
+-  {name: Random Quote Machine, description: 'A random quote generator', site: 'gordon2012.github.io/quote', github: 'github.com/gordon2012/quote'}
 
 -  {name: Wikipedia Search, description: 'An implementation of Wikipedia search that uses its search API'}
 
